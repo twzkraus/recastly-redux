@@ -1,7 +1,7 @@
 var changeVideo = (video) => {
   return {
     type: 'CHANGE_VIDEO',
-    video: video,
+    video
   };
 };
 
