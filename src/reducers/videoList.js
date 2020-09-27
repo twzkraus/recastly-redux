@@ -5,7 +5,7 @@ var videoListReducer = (state = exampleVideoData, action) => {
   if (action.type === 'CHANGE_VIDEO_LIST') {
     return action.videos;
   }
-  return [];
+  return state;
 };
 
 export default videoListReducer;

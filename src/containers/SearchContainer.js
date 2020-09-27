@@ -3,13 +3,12 @@ import Search from './../components/Search.js';
 import handleSearchChange from '../actions/search.js';
 
 const mapStateToProps = state => {
-  return {
-  }
+  return {}
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    handleSearchInputChange: query => dispatch(handleSearchChange(query))
+    handleInputChange: query => dispatch(handleSearchChange(query))
   }
 }
 
