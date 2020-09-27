@@ -3,7 +3,11 @@ import thunk from 'redux-thunk';
 import rootReducer from './../reducers/main.js';
 import exampleVideoData from '../data/exampleVideoData.js';
 
-// not really sure how this works. Docs say thunk is helpful, but idk what it does
-const store = createStore(rootReducer, exampleVideoData, applyMiddleware(thunk));
+const initialState = {
+  currentVideo: exampleVideoData[0],
+  videoList: exampleVideoData
+};
+
+const store = createStore(rootReducer, initialState, applyMiddleware(thunk));
 
 export default store;
